@@ -6,7 +6,7 @@ const Status = ({setStatus, setPageNumber}) => {
     let status = ["Alive", "Dead", "Unkown"];
   return (
     <div className="accordion-item">
-    <h2 className="accordion-header" id="headingThree">
+    <h2 className="accordion-header" id="headingOne">
       <button 
         className="accordion-button" 
         type="button" 
@@ -37,7 +37,7 @@ const Status = ({setStatus, setPageNumber}) => {
       </div>
     </div>
   </div>
-  )
-}
+  );
+};
 
 export default Status

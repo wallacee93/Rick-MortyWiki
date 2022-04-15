@@ -7,20 +7,21 @@ const InputGroup = ({total, name, setID}) => {
     <div class="input-group mb-3">
   <select 
     onChange={e => setID(e.target.value)}
-    class="form-select" id={name}>
-    <option selected>Choose...</option>
+    class="form-select" 
+    id={name}
+  >
+    <option value="1">Choose...</option>
 
-    {[...Array(total).keys()].map((x) => {
+    {[...Array(total).keys()].map((x, index) => {
         return (
-        <option 
-            value={x + 1}>
+        <option value = {x + 1}>
                 {name} - {x + 1}
         </option>
         );
     })}
   </select>
 </div>
-  )
-}
+  );
+};
 
 export default InputGroup

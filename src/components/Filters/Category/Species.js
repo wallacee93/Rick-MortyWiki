@@ -38,20 +38,20 @@ const Species = ({setPageNumber, setSpecies}) => {
         data-bs-parent="#accordionExample"
     >
       <div className="accordion-body d-flex flex-wrap gap-2">
-          {species.map((items, index) => (
+          {species.map((item, index) => (
             <FilterBTN 
               task={setSpecies}
               setPageNumber={setPageNumber}
               key={index} 
               name="species" 
               index={index} 
-              items={items}
+              items={item}
             />
           ))}
       </div>
     </div>
   </div>
   );
-}
+};
 
 export default Species
